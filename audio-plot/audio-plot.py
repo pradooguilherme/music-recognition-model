@@ -5,12 +5,12 @@ import librosa
 import librosa.display
 import os
 
-directory_Classic_Music = '/home/pradooguilherme/PycharmProjects/PythonProject1/music/classic-music'
-directory_Electronic_Music = '/home/pradooguilherme/PycharmProjects/PythonProject1/music/electronic-music'
+directory_Classic_Music = '/home/pradooguilherme/PycharmProjects/PythonProject1/music/test-dataset/classical'
+directory_Electronic_Music = '/home/pradooguilherme/PycharmProjects/PythonProject1/music/test-dataset/electronic'
 
-output_directory = '/home/pradooguilherme/PycharmProjects/PythonProject1/music/output-audio'
+output_directory = '/home/pradooguilherme/PycharmProjects/PythonProject1/music/test-dataset/output-audio'
 
-a = 0
+a=0
 
 for filename in os.listdir(directory_Classic_Music):
 
@@ -28,6 +28,8 @@ for filename in os.listdir(directory_Classic_Music):
 
         plt.close()
         a = a + 1
+
+a=0
 
 for filename in os.listdir(directory_Electronic_Music):
 
