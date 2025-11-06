@@ -10,15 +10,13 @@ Para representar o áudio visualmente, foram utilizados **espectrogramas**, que 
 
 Essas imagens foram geradas por meio da **Transformada de Fourier de Curto Termo (STFT)**, que permite analisar a distribuição das frequências em pequenos intervalos de tempo.  
 
-Com essa abordagem, utilizei a biblioteca **yt_dlp** para baixar trechos de 15 segundos de músicas de cada gênero, garantindo material suficiente para análise.  
-A conversão do áudio em espectrogramas foi realizada com a biblioteca **Librosa**, especializada em análise de áudio.  
+Com essa abordagem, utilizei a biblioteca **yt_dlp** para baixar trechos de 15 segundos de músicas de cada gênero, garantindo material suficiente para análise. A conversão do áudio em espectrogramas foi realizada com a biblioteca **Librosa**, especializada em análise de áudio.  
 
 ---
 
 ### 🧠 Treinamento do modelo  
 
-Com os espectrogramas prontos, utilizei a biblioteca **FastAI** para o treinamento, escolhendo o modelo **ResNet18**, pré-treinado para reconhecimento de imagens.  
-O treinamento foi realizado na plataforma **Kaggle**, aproveitando seus recursos de computação em nuvem.  
+Com os espectrogramas prontos, utilizei a biblioteca **FastAI** para o treinamento, escolhendo o modelo **ResNet18**, pré-treinado para reconhecimento de imagens. O treinamento foi realizado na plataforma **Kaggle**, aproveitando seus recursos de computação em nuvem.  
 
 O dataset foi composto por **20 imagens de espectrogramas de músicas eletrônicas** e **20 de músicas clássicas**.  
 
